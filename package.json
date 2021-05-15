@@ -5,7 +5,7 @@
   "main": "gsap_animation.js",
   "scripts": {
     "start": "sergey",
-    "dev": "sergey- --watch"
+    "dev": "sergey --watch"
   },
   "repository": {
     "type": "git",
