@@ -15,6 +15,9 @@
 footer .links a:hover {
   color: var(--logo-colour);
 }
+.navbar .nav-item.dropdown .dropdown-item:hover {
+  color: var(--logo-colour);
+}
 footer .logo {
   width: 140px;
   height: auto;
