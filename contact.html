@@ -40,6 +40,10 @@
         border: none;
       } */
 
+      .contact_details .icon {
+        width: 50px;
+      }
+
       @media only screen and (max-width: 600px) {
         #gmap {
           padding-bottom: 55%;
@@ -65,14 +69,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="/">Home</a>
-              <a class="nav-link" href="#">Rapid Prototyping</a>
-              <a class="nav-link" href="#">Custom Manufacturing</a>
-              <a class="nav-link" href="#">Contract Manufacturing</a>
-              <a class="nav-link" href="#">Quick Quote</a>
+              <a class="nav-link active" href="/">Home</a>
+              <a class="nav-link" href="rapid-ptg.html">Rapid Prototyping</a>
+              <a class="nav-link" href="custom-mfg.html"
+                >Custom Manufacturing</a
+              >
+              <a class="nav-link" href="contract-mfg.html"
+                >Contract Manufacturing</a
+              >
+              <a class="nav-link" href="quick-quote.html">Quick Quote</a>
               <a class="nav-link" href="team.html">Team</a>
-              <a class="nav-link" href="#">mmi.ai</a>
-              <a class="nav-link active" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="mmi.html">mmi.ai</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </div>
           </div>
         </div>
@@ -96,23 +104,44 @@
       <!-- Contact Form -->
       <div class="contact_section my-5">
         <div class="row">
-          <div class="col-sm-12 col-lg-5 p-4">
-            <div class="">
-              <h4>Address:</h4>
-              <p>
-                Site #36, 1st Floor, 2nd phase, <br />
-                KIADB main Road, adjacent to Coir board,<br />
-                Peenya 1st Stage, Peenya, <br />
-                Bengaluru, Karnataka 560058
-              </p>
+          <div class="col-sm-12 col-lg-5 p-3 contact_details">
+            <div class="row align-items-center mb-lg-2">
+              <div class="col-sm-12 col-lg-2 mb-sm-2 mb-lg-0">
+                <img
+                  class="icon"
+                  src="assets/location.svg"
+                  alt="Location Icon"
+                />
+              </div>
+              <div class="col-sm-12 col-lg-10">
+                <h4>Address:</h4>
+                <p>
+                  Site #36, 1st Floor, 2nd phase, <br />
+                  KIADB main Road, adjacent to Coir board,<br />
+                  Peenya 1st Stage, Peenya, <br />
+                  Bengaluru, Karnataka 560058
+                </p>
+              </div>
             </div>
-            <div>
-              <h4>Email:</h4>
-              <p>connect@printalytix.com</p>
+
+            <div class="row align-items-center mb-lg-2">
+              <div class="col-sm-12 col-lg-2 mb-sm-2 mb-lg-0">
+                <img class="icon" src="assets/email.svg" alt="Email Icon" />
+              </div>
+              <div class="col-sm-12 col-lg-10">
+                <h4>Email:</h4>
+                <p>connect@printalytix.com</p>
+              </div>
             </div>
-            <div>
-              <h4>Call:</h4>
-              <p>+91-9008250815</p>
+
+            <div class="row align-items-center mb-lg-2">
+              <div class="col-sm-12 col-lg-2 mb-sm-2 mb-lg-0">
+                <img class="icon" src="assets/call.svg" alt="Call Icon" />
+              </div>
+              <div class="col-sm-12 col-lg-10">
+                <h4>Call:</h4>
+                <p>+91-9008250815</p>
+              </div>
             </div>
           </div>
           <div class="col-sm-12 col-lg-7">
@@ -125,6 +154,7 @@
                     id="name"
                     name="name"
                     placeholder="Your Name"
+                    required
                   />
                 </div>
                 <div class="mb-4 col-sm-12 col-lg-6">
@@ -134,6 +164,7 @@
                     id="email"
                     name="email"
                     placeholder="Your Email"
+                    required
                   />
                 </div>
                 <div class="mb-4 col-sm-12 col-lg-12">
@@ -143,6 +174,7 @@
                     id="subject"
                     name="subject"
                     placeholder="Subject"
+                    required
                   />
                 </div>
                 <div class="mb-4 col-sm-12 col-lg-12">
@@ -152,6 +184,7 @@
                     rows="6"
                     name="message"
                     placeholder="Message"
+                    required
                   ></textarea>
                 </div>
                 <div class="submit mb-4 col-sm-12 col-lg-12 text-center">
@@ -188,17 +221,17 @@
             <h5 class="text-secondary">Quick Links</h5>
             <ul>
               <li>
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li>
-                <a class="nav-link" href="#">Quick Quote</a>
+                <a class="nav-link" href="quick-quote.html">Quick Quote</a>
               </li>
 
               <li>
-                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="team.html">Team</a>
               </li>
               <li>
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -217,13 +250,25 @@
               <div class="social-media-links my-3">
                 <p>Follow us on social media</p>
                 <div class="links">
-                  <a class="btn facebook_icon" href="#" role="button"
+                  <a
+                    class="btn facebook_icon"
+                    href="https://www.facebook.com/printalytix.official/"
+                    role="button"
+                    target="_blank"
                     ><i class="bi bi-facebook"></i
                   ></a>
-                  <a class="btn instagram_icon" href="#" role="button"
+                  <a
+                    class="btn instagram_icon"
+                    href="https://www.instagram.com/printalytix.official/?hl=en"
+                    role="button"
+                    target="_blank"
                     ><i class="bi bi-instagram"></i
                   ></a>
-                  <a class="btn linkedin_icon" href="#" role="button"
+                  <a
+                    class="btn linkedin_icon"
+                    href="https://www.linkedin.com/company/13757623/admin/"
+                    role="button"
+                    target="_blank"
                     ><i class="bi bi-linkedin"></i
                   ></a>
                 </div>
