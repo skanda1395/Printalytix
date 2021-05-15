@@ -4,7 +4,7 @@
   "description": "",
   "main": "gsap_animation.js",
   "scripts": {
-    "start": "sergey",
+    "start": "sergey --output=dist",
     "dev": "sergey --watch"
   },
   "repository": {
