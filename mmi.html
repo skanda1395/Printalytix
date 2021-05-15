@@ -57,14 +57,18 @@
       </nav>
     </header>
 
-    <main class="d-flex align-items-center justify-content-center">
+    <main class="align-items-center justify-content-center">
       <section class="coming_soon">
-        <div class="creative-text">
-          <span class="txt anim-text-flow display-2">Coming Soon</span>
+        <lottie-player
+          src="https://assets10.lottiefiles.com/packages/lf20_m6cuL6.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="creative-text mt-3">
+          <span class="txt anim-text-flow">Game Changer in Manufacturing</span>
         </div>
-        <h4 class="text-center display-5 fs-2 my-4 text-muted">
-          Game Changer in Manufacturing
-        </h4>
       </section>
     </main>
 
@@ -174,5 +178,6 @@
         return "<span>" + chars.join("</span><span>") + "</span>";
       });
     </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
