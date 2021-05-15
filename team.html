@@ -36,6 +36,16 @@
         width: 90% !important;
         margin: 0 auto !important;
       }
+      .card-text .designation {
+        cursor: help;
+        border-bottom: 2px dotted black;
+      }
+      /* main {
+        padding-top: 0;
+      } */
+      .team_bg {
+        padding-top: 90px;
+      }
     </style>
   </head>
   <body>
@@ -74,14 +84,27 @@
       </nav>
     </header>
 
+    <!-- <div class="team_bg">
+      <lottie-player
+        src="https://assets10.lottiefiles.com/packages/lf20_atgjqorh.json"
+        mode="bounce"
+        background="#eee"
+        speed="1"
+        style="width: 100%; height: 300px"
+        loop
+        autoplay
+      ></lottie-player>
+    </div> -->
+
     <main class="container1">
+      <!-- Team Illustration -->
       <!-- Team -->
       <div class="team_cards my-2">
         <h4 class="text-center display-4 main-title text-primary mb-5">
           Meet Our Team
         </h4>
         <div class="row">
-          <div class="col-sm-12 col-lg-3 mb-sm-4">
+          <div class="col-sm-12 col-lg-3 mb-4">
             <div class="card shadow">
               <img
                 src="assets/team/ashwin.png"
@@ -101,7 +124,7 @@
                 </h5>
                 <p class="card-text">
                   <span
-                    class="fs-5"
+                    class="fs-5 designation"
                     data-bs-toggle="tooltip"
                     data-bs-placement="right"
                     title="Chief Executive Officer"
@@ -112,9 +135,13 @@
                   Systems & Process, Fulfillment Unit
                 </p>
               </div>
+              <div class="card-footer text-muted">
+                Ex-Sania Vehicles, Ex-HCL <br />
+                IISc & BE Mech. (VTU)
+              </div>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-3 mb-sm-4">
+          <div class="col-sm-12 col-lg-3 mb-4">
             <div class="card shadow">
               <img
                 src="assets/team/kiran.jpg"
@@ -134,7 +161,7 @@
                 </h5>
                 <p class="card-text">
                   <span
-                    class="fs-5"
+                    class="fs-5 designation"
                     data-bs-toggle="tooltip"
                     data-bs-placement="right"
                     title="Chief Procurement Officer"
@@ -145,9 +172,13 @@
                   mmi Development, IR & Strategy
                 </p>
               </div>
+              <div class="card-footer text-muted">
+                Ex-Mu-Sigma, Ex-Saint-Gobain <br />
+                MBA (IGCC - B'lore), BE Mech. (VTU)
+              </div>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-3 mb-sm-4">
+          <div class="col-sm-12 col-lg-3 mb-4">
             <div class="card shadow">
               <img
                 src="assets/team/ranjan.jpg"
@@ -167,7 +198,7 @@
                 </h5>
                 <p class="card-text">
                   <span
-                    class="fs-5"
+                    class="fs-5 designation"
                     data-bs-toggle="tooltip"
                     data-bs-placement="right"
                     title="Coordination, Control and the Management of Organizations"
@@ -178,9 +209,13 @@
                   Sales, Commercials & Marketing
                 </p>
               </div>
+              <div class="card-footer text-muted">
+                Ex-Mu-Sigma, Ex-L&T <br />
+                BE Chem. (VTU)
+              </div>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-3 mb-sm-4">
+          <div class="col-sm-12 col-lg-3 mb-4">
             <div class="card shadow">
               <img
                 src="assets/team/abhishek.jpg"
@@ -200,7 +235,7 @@
                 </h5>
                 <p class="card-text">
                   <span
-                    class="fs-5"
+                    class="fs-5 designation"
                     data-bs-toggle="tooltip"
                     data-bs-placement="right"
                     title="Chief Operating Officer"
@@ -212,11 +247,15 @@
                   Project Management, Fulfillment Unit
                 </p>
               </div>
+              <div class="card-footer text-muted">
+                Ex-Procter & Gamble <br />
+                PhD in Physics (Ghent University, Belgium)
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Mentor -->
+      <!-- Mentor(s) -->
       <div class="mentor_cards my-5">
         <h4 class="text-center display-4 main-title text-primary mb-5">
           Our Mentor
@@ -245,6 +284,7 @@
                   <br />
                   Former
                   <span
+                    class="designation"
                     data-bs-toggle="tooltip"
                     data-bs-placement="right"
                     title="Chief Operating Officer"
@@ -253,6 +293,7 @@
                   at AuthBridge<br />
                   Former
                   <span
+                    class="designation"
                     data-bs-toggle="tooltip"
                     data-bs-placement="right"
                     title="Chief Human Resources Officer"
@@ -373,5 +414,6 @@
         return new bootstrap.Tooltip(tooltipTriggerEl);
       });
     </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

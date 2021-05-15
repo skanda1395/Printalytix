@@ -5,7 +5,7 @@
   --linkedin-colour: #0e76a8;
 }
 .navbar .logo {
-  width: 180px;
+  width: 125px;
   height: auto;
 }
 .navbar .navbar-nav .nav-link {
@@ -45,5 +45,29 @@ footer .social-media-links a.linkedin_icon {
   background-color: var(--linkedin-colour);
 }
 main {
-  padding-top: 150px;
+  padding-top: 120px;
+}
+
+#demo {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+}
+
+#demo h3 {
+  position: absolute;
+  font-family: Georgia;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  font-size: 8rem;
+  top: 100px;
+}
+
+#demo h3.active {
+  color: var(--logo-colour);
 }
