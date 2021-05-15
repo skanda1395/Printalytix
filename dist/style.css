@@ -1,0 +1,85 @@
+:root {
+  --logo-colour: #ff962d;
+  --facebook-colour: #4267b2;
+  --instagram-colour: #cd486b;
+  --linkedin-colour: #0e76a8;
+}
+.navbar .logo {
+  width: 125px;
+  height: auto;
+}
+.navbar .navbar-nav .nav-link {
+  margin: 0 0.5rem;
+}
+.navbar .navbar-nav .nav-link:hover,
+footer .links a:hover {
+  color: var(--logo-colour);
+}
+footer .logo {
+  width: 140px;
+  height: auto;
+}
+.navbar .navbar-nav .nav-link.active {
+  color: var(--logo-colour);
+}
+footer .links ul {
+  padding: 0;
+}
+footer .links li {
+  list-style-type: none;
+  color: black !important;
+}
+footer .social-media-links a {
+  color: white;
+}
+footer .social-media-links a:hover {
+  color: white;
+}
+footer .social-media-links a.facebook_icon {
+  background-color: var(--facebook-colour);
+}
+footer .social-media-links a.instagram_icon {
+  background-color: var(--instagram-colour);
+}
+footer .social-media-links a.linkedin_icon {
+  background-color: var(--linkedin-colour);
+}
+main {
+  padding-top: 120px;
+}
+
+#demo {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+}
+
+#demo h3 {
+  position: absolute;
+  font-family: Georgia;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  font-size: 8rem;
+  top: 100px;
+}
+
+#demo h3.active {
+  color: var(--logo-colour);
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #7f7f7f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--logo-colour);
+}

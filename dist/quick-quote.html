@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Printalytix</title>
+    <style>
+      .form_outer_div {
+        height: 600px;
+        overflow: auto;
+      }
+      .form_outer_div::-webkit-scrollbar {
+        width: 0.25rem;
+      }
+
+      .form_outer_div::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      .form_outer_div::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+      }
+      @media only screen and (max-width: 600px) {
+        .form_outer_div {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="Printalytix Logo" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="rapid-ptg.html">Rapid Prototyping</a>
+              <a class="nav-link" href="custom-mfg.html"
+                >Custom Manufacturing</a
+              >
+              <a class="nav-link" href="contract-mfg.html"
+                >Contract Manufacturing</a
+              >
+              <a class="nav-link active" href="quick-quote.html">Quick Quote</a>
+              <a class="nav-link" href="team.html">Team</a>
+              <a class="nav-link" href="mmi.html">mmi.ai</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Quick Quote Form -->
+
+      <div class="row py-lg-4 mb-5">
+        <div class="col-sm-12 col-lg-6 align-self-center">
+          <div class="title text-center">
+            <h5 class="display-4">Enquire Now</h5>
+            <p>Feel free to drop in your query and get a quick quote</p>
+          </div>
+          <lottie-player
+            src="https://assets1.lottiefiles.com/packages/lf20_9wjm14ni.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: auto"
+            autoplay
+          ></lottie-player>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="form_outer_div card">
+            <div class="card-body">
+              <form action="#" method="POST">
+                <!-- Name -->
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+
+                <!-- Company Name -->
+                <div class="mb-3">
+                  <label for="company_name" class="form-label"
+                    >Company Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="company_name"
+                    name="company_name"
+                    required
+                  />
+                </div>
+                <!-- Designation -->
+                <div class="mb-3">
+                  <label for="designation" class="form-label"
+                    >Designation</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="designation"
+                    name="designation"
+                  />
+                </div>
+                <!-- Application of the parts -->
+                <div class="mb-3">
+                  <label for="app_of_parts" class="form-label"
+                    >Application of part(s)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="app_of_parts"
+                    name="app_of_parts"
+                  />
+                </div>
+                <!-- Tech for manufacturing -->
+                <div class="mb-3">
+                  <label for="tech_for_manufacturing" class="form-label"
+                    >Technology for manufacturing</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="tech_for_manufacturing"
+                    name="tech_for_manufacturing"
+                  />
+                </div>
+                <!-- Colour -->
+                <div class="mb-3">
+                  <label for="colour" class="form-label"
+                    >Any Particular Colour?</label
+                  >
+                  <input
+                    type="color"
+                    class="form-control form-control-color"
+                    id="colour"
+                    name="colour"
+                  />
+                </div>
+                <!-- Post-processing  -->
+                <div class="mb-3">
+                  <label for="post_processing" class="form-label"
+                    >Any particular post-processing?
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="post_processing"
+                    name="post_processing"
+                  />
+                </div>
+                <!-- 3D Models -->
+                <div class="mb-3">
+                  <label for="3D_models" class="form-label" name="3D_models"
+                    >Upload 3D Models here</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="3D_models"
+                    multiple
+                    required
+                  />
+                </div>
+                <!-- PDFs & Word Files -->
+                <div class="mb-3">
+                  <label for="text_files" class="form-label" name="3D_models"
+                    >Upload associated Word/PDF files here</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    name="text_files"
+                    id="text_files"
+                    multiple
+                    required
+                  />
+                </div>
+                <!-- Official Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <!-- Official Phone Number -->
+                <div class="mb-3">
+                  <label for="phone_number" class="form-label"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone_number"
+                    name="phone_number"
+                    required
+                  />
+                </div>
+                <div class="text-center submit_btn">
+                  <button type="submit" class="btn btn-lg btn-outline-primary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-light">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-sm-12 col-lg-3 my-3">
+            <div class="logo">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="assets/logo.png"
+                  alt="Printalytix Logo"
+                  class="logo"
+                />
+              </a>
+            </div>
+            <p class="my-2 lead">
+              Your Trusted Partner For Manufacturing Solutions
+            </p>
+            <!-- <p class="fw-light">#ManufactureWithPrintalytix</p> -->
+          </div>
+          <div class="col-sm-12 col-lg-3 links">
+            <h5 class="text-secondary">Quick Links</h5>
+            <ul>
+              <li>
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="quick-quote.html">Quick Quote</a>
+              </li>
+
+              <li>
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li>
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <h5 class="text-secondary">Contact Us</h5>
+            <div class="contact_info">
+              <div class="phone_email_info mt-3">
+                <p class="my-1">
+                  <strong class="text-secondary"> Phone:</strong> +91-9008250815
+                </p>
+                <p class="my-1">
+                  <strong class="text-secondary"> Email:</strong>
+                  connect@printalytix.com
+                </p>
+              </div>
+              <div class="social-media-links my-3">
+                <p>Follow us on social media</p>
+                <div class="links">
+                  <a
+                    class="btn facebook_icon"
+                    href="https://www.facebook.com/printalytix.official/"
+                    role="button"
+                    target="_blank"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a
+                    class="btn instagram_icon"
+                    href="https://www.instagram.com/printalytix.official/?hl=en"
+                    role="button"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a
+                    class="btn linkedin_icon"
+                    href="https://www.linkedin.com/company/13757623/admin/"
+                    role="button"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <h5 class="text-secondary">Address</h5>
+            <div class="address mt-3">
+              <p>
+                Plot # 3B, Site # 36, 1st Floor, Shop # 03, <br />
+                2nd Phase, KIADB Main Road, Opp. BWSSB, <br />
+                Peenya 1st Stage, Peenya Industrial Area, <br />
+                Adjacent To Coir Board, <br />
+                Bangalore – 560 058
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Lottie Animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
