@@ -1,5 +1,6 @@
 :root {
   --logo-colour: #ff962d;
+  --secondary-colour: #7f7f7f;
   --facebook-colour: #4267b2;
   --instagram-colour: #cd486b;
   --linkedin-colour: #0e76a8;
@@ -80,9 +81,29 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #7f7f7f;
+  background: var(--secondary-colour);
 }
 
 body::-webkit-scrollbar-thumb {
   background: var(--logo-colour);
+}
+
+/* Form Inputs Stylying */
+.form-control:focus {
+  border: 1px solid var(--logo-colour) !important;
+  box-shadow: 0 0 0 0.1rem var(--logo-colour);
+}
+
+.submit .btn {
+  border: 1px solid var(--logo-colour) !important;
+  color: var(--logo-colour);
+}
+
+.submit .btn:hover {
+  background: var(--logo-colour);
+  color: white;
+}
+
+.submit .btn:focus {
+  box-shadow: 0 0 0 0.25rem #ff962dad;
 }
