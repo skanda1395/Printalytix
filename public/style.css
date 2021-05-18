@@ -5,6 +5,10 @@
   --instagram-colour: #cd486b;
   --linkedin-colour: #0e76a8;
 }
+.container1 {
+  width: 98.4%;
+  margin: 0 auto;
+}
 .navbar .logo {
   width: 125px;
   height: auto;
