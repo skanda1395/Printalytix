@@ -70,6 +70,22 @@
         height: auto;
         margin-right: 13px;
       }
+      #partners .partner-logo {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        filter: grayscale(100%);
+      }
+      #partners .partner-logo:hover {
+        filter: none;
+        transform: scale(1.1);
+        transition: all ease 200ms;
+      }
+      @media only screen and (max-width: 600px) {
+        #partners .partner-logo {
+          margin-bottom: 1rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -259,9 +275,32 @@
         </button>
       </div>
 
+      <!-- Services -->
+      <section id="services" class="container-fluid"></section>
+
       <!-- Counter + Map -->
-      <div id="counter_map" class="my-4 container1">
+      <div id="counter_map" class="my-5 container-fluid">
         <div class="row bg-light">
+          <div class="col-sm-12 col-md-6 order-md-1">
+            <lottie-player
+              src="https://assets4.lottiefiles.com/packages/lf20_cgpoa2.json"
+              mode="bounce"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: auto"
+              loop
+              autoplay
+            ></lottie-player>
+            <!-- <lottie-player
+              src="https://assets10.lottiefiles.com/packages/lf20_id1rosky.json"
+              mode="bounce"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: auto"
+              loop
+              autoplay
+            ></lottie-player> -->
+          </div>
           <div class="col-sm-12 col-md-6 counters align-self-center">
             <div class="row mb-md-3">
               <div class="col-md-6">
@@ -414,32 +453,42 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6">
-            <lottie-player
-              src="https://assets4.lottiefiles.com/packages/lf20_cgpoa2.json"
-              mode="bounce"
-              background="transparent"
-              speed="1"
-              style="width: 100%; height: auto"
-              loop
-              autoplay
-            ></lottie-player>
-            <!-- <lottie-player
-              src="https://assets10.lottiefiles.com/packages/lf20_id1rosky.json"
-              mode="bounce"
-              background="transparent"
-              speed="1"
-              style="width: 100%; height: auto"
-              loop
-              autoplay
-            ></lottie-player> -->
-          </div>
         </div>
       </div>
 
+      <!-- Partners -->
+      <section id="partners" class="my-5 container">
+        <h4 class="text-center display-4 main-title text-danger mb-4">
+          Strategic Partners
+        </h4>
+        <div class="partners_div row py-3 text-center">
+          <div class="col-sm-12 col-md-4">
+            <img
+              src="assets/partners/partner1.png"
+              alt=""
+              class="partner-logo"
+            />
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <img
+              src="assets/partners/partner3.png"
+              alt=""
+              class="partner-logo"
+            />
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <img
+              src="assets/partners/partner4.png"
+              alt=""
+              class="partner-logo"
+            />
+          </div>
+        </div>
+      </section>
+
       <!-- Testimonials -->
-      <section id="testimonials" class="my-4 container">
-        <h4 class="text-center display-4 main-title text-danger mb-5">
+      <section id="testimonials" class="my-5 container">
+        <h4 class="text-center display-4 main-title text-danger mb-4">
           Testimonials
         </h4>
         <div class="center">
@@ -604,7 +653,7 @@
     <script src="slick_custom.js"></script>
     <script>
       const counters = document.querySelectorAll("#counter_map .counter");
-      let speed = 50;
+      let speed = 200;
       counters.forEach((counter) => {
         const updateCount = () => {
           const target = +counter.getAttribute("data-target");
