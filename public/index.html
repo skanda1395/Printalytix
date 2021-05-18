@@ -84,6 +84,20 @@
       #services .service_animation_item {
         display: none;
       }
+      #services lottie-player {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+      }
+      #services .long_lottie {
+        height: 500px !important;
+        width: auto !important;
+      }
+      #services .service_title {
+        color: var(--logo-colour);
+      }
+
       @media only screen and (max-width: 600px) {
         #partners .partner-logo {
           margin-bottom: 1rem;
@@ -280,128 +294,115 @@
 
       <!-- Services -->
       <section id="services" class="my-5 container">
-        <h4 class="text-center display-4 main-title text-danger mb-5">
+        <h4 class="text-center display-4 main-title text-danger">
           Our Services
         </h4>
         <div class="row">
-          <div class="col-sm-12 col-lg-6 services_brief">
-            <div class="accordion accordion-flush" id="services_accordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
-                  >
-                    Rapid Prototyping
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingOne"
-                  data-bs-parent="#services_accordion"
-                >
-                  <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
-                  >
-                    Custom Manufacturing
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#services_accordion"
-                >
-                  <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the second item's accordion body. Let's imagine this being
-                    filled with some actual content.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseThree"
-                  >
-                    Contract Manufacturing
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
-                  data-bs-parent="#services_accordion"
-                >
-                  <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the third item's accordion body. Nothing more exciting
-                    happening here in terms of content, but just filling up the
-                    space to make it look, at least at first glance, a bit more
-                    representative of how this would look in a real-world
-                    application.
-                  </div>
-                </div>
+          <div class="col-sm-12 col-md-6 order-md-1 align-self-center">
+            <lottie-player
+              src="https://assets6.lottiefiles.com/packages/lf20_4906fv6z.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <div
+            class="
+              col-sm-12 col-md-6
+              align-self-center
+              card
+              bg-dark
+              text-white
+              shadow-lg
+            "
+          >
+            <div class="card-body">
+              <h4 class="display-4 service_title">Rapid Prototyping</h4>
+              <p class="brief">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                expedita eligendi minima vel fugiat dolorum obcaecati.
+                Laboriosam, dolore adipisci. Deserunt libero corrupti ex
+                accusamus earum iure sit. Natus, corporis nemo?
+              </p>
+              <div class="text-end">
+                <a href="rapid-ptg.html" class="btn btn-primary">Know More</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-6 services_animations">
-            <div class="service_animation_item">
-              <lottie-player
-                src="https://assets6.lottiefiles.com/packages/lf20_4906fv6z.json"
-                background="transparent"
-                speed="1"
-                style="width: 100%; height: auto"
-                loop
-                autoplay
-              ></lottie-player>
-            </div>
-            <div class="service_animation_item">
-              <lottie-player
-                src="https://assets1.lottiefiles.com/packages/lf20_q56zavhf.json"
-                background="transparent"
-                speed="1"
-                style="width: 100%; height: auto"
-                loop
-                autoplay
-              ></lottie-player>
-            </div>
+        </div>
 
-            <div class="service_animation_item">
-              <lottie-player
-                src="https://assets5.lottiefiles.com/packages/lf20_Mjmr5Q.json"
-                background="transparent"
-                speed="1"
-                style="width: 100%; height: auto"
-                loop
-                autoplay
-              ></lottie-player>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 align-self-center">
+            <lottie-player
+              src="https://assets1.lottiefiles.com/packages/lf20_q56zavhf.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <div
+            class="
+              col-sm-12 col-md-6
+              align-self-center
+              card
+              bg-dark
+              text-white
+              shadow-lg
+            "
+          >
+            <div class="card-body">
+              <h4 class="display-4 service_title">Custom Manufacturing</h4>
+              <p class="brief">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nostrum, ducimus iusto dolore, magnam, optio eligendi ratione
+                maiores veniam nihil quisquam molestiae mollitia. Omnis, porro
+                laboriosam error excepturi exercitationem totam soluta?
+              </p>
+              <div class="text-end">
+                <a href="custom-mfg.html" class="btn btn-primary text-end"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 order-md-1 align-self-center">
+            <lottie-player
+              src="https://assets5.lottiefiles.com/packages/lf20_Mjmr5Q.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+              class="long_lottie"
+            ></lottie-player>
+          </div>
+          <div
+            class="
+              col-sm-12 col-md-6
+              align-self-center
+              card
+              bg-dark
+              text-white
+              shadow-lg
+            "
+          >
+            <div class="card-body">
+              <h4 class="display-4 service_title">Contract Manufacturing</h4>
+              <p class="brief">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+                voluptates molestias eos sapiente veniam ex tempora! Iusto,
+                suscipit! Atque quaerat facilis nihil. Tempora eos earum
+                praesentium exercitationem autem eum provident.
+              </p>
+              <div class="text-end">
+                <a href="contract-mfg.html" class="btn btn-primary"
+                  >Know More</a
+                >
+              </div>
             </div>
           </div>
         </div>
