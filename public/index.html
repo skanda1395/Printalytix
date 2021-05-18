@@ -81,6 +81,9 @@
         transform: scale(1.1);
         transition: all ease 200ms;
       }
+      #services .service_animation_item {
+        display: none;
+      }
       @media only screen and (max-width: 600px) {
         #partners .partner-logo {
           margin-bottom: 1rem;
@@ -276,7 +279,133 @@
       </div>
 
       <!-- Services -->
-      <section id="services" class="container-fluid"></section>
+      <section id="services" class="my-5 container">
+        <h4 class="text-center display-4 main-title text-danger mb-5">
+          Our Services
+        </h4>
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 services_brief">
+            <div class="accordion accordion-flush" id="services_accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Rapid Prototyping
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#services_accordion"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Custom Manufacturing
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#services_accordion"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Contract Manufacturing
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#services_accordion"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the
+                    space to make it look, at least at first glance, a bit more
+                    representative of how this would look in a real-world
+                    application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 services_animations">
+            <div class="service_animation_item">
+              <lottie-player
+                src="https://assets6.lottiefiles.com/packages/lf20_4906fv6z.json"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: auto"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div class="service_animation_item">
+              <lottie-player
+                src="https://assets1.lottiefiles.com/packages/lf20_q56zavhf.json"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: auto"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+
+            <div class="service_animation_item">
+              <lottie-player
+                src="https://assets5.lottiefiles.com/packages/lf20_Mjmr5Q.json"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: auto"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Counter + Map -->
       <div id="counter_map" class="my-5 container-fluid">
@@ -754,6 +883,32 @@
         };
         updateCount();
       });
+    </script>
+    <script>
+      const services_accordion = document.getElementById("services_accordion");
+
+      const service_accordion_btns =
+        document.getElementsByClassName("accordion-button");
+
+      const service_accordion_animations = document.getElementsByClassName(
+        "service_animation_item"
+      );
+
+      for (let i = 0; i < service_accordion_btns.length; i++) {
+        service_accordion_btns[i].addEventListener(
+          "click",
+          update_accordion_animation
+        );
+      }
+
+      function update_accordion_animation(event) {
+        // Switch to respective accordion animation
+        for (let i = 0; i < service_accordion_animations.length; i++) {
+          service_accordion_animations[i].classList.toggle("show");
+        }
+        const accordion_id = event.target.getAttribute("aria-controls");
+        console.log(services_accordion.querySelector(`#${accordion_id}`));
+      }
     </script>
   </body>
 </html>
