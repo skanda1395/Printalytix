@@ -53,7 +53,6 @@
       }
       .navbar a {
         color: white;
-        text-transform: uppercase;
       }
       main {
         padding-top: 0;
@@ -98,9 +97,25 @@
         color: var(--logo-colour);
       }
 
+      .navbar.scrolled {
+        background-color: #f8f9fa !important;
+        transition: background-color 200ms linear;
+      }
+
+      .navbar.scrolled .nav-link {
+        color: rgba(0, 0, 0, 0.55);
+      }
+
+      .navbar .dropdown-menu .dropdown-item {
+        color: grey;
+      }
+
       @media only screen and (max-width: 600px) {
         #partners .partner-logo {
           margin-bottom: 1rem;
+        }
+        .navbar {
+          background: #f8f9fa;
         }
       }
     </style>
@@ -222,7 +237,9 @@
               "
             >
               <div class="slider-text">
-                <h5 class="display-4 fw-bold">Welcome to your one-stop-shop</h5>
+                <h5 class="display-4 fw-bold slider_title">
+                  Welcome to your one-stop-shop
+                </h5>
                 <p class="lead display-5 fs-1">
                   Flexibility blends in Capabilities
                 </p>
@@ -244,7 +261,9 @@
               "
             >
               <div class="slider-text">
-                <h5 class="display-4 fw-bold">Welcome to your one-stop-shop</h5>
+                <h5 class="display-4 fw-bold slider_title">
+                  Welcome to your one-stop-shop
+                </h5>
                 <p class="lead display-5 fs-1">Empathy meets Progress</p>
               </div>
             </div>
@@ -264,7 +283,9 @@
               "
             >
               <div class="slider-text">
-                <h5 class="display-4 fw-bold">Welcome to your one-stop-shop</h5>
+                <h5 class="display-4 fw-bold slider_title">
+                  Welcome to your one-stop-shop
+                </h5>
                 <p class="lead display-5 fs-1">
                   Reliability meets Transparency
                 </p>
@@ -420,27 +441,11 @@
               style="width: 100%; height: auto"
               autoplay
             ></lottie-player>
-
-            <!-- <lottie-player
-              src="https://assets4.lottiefiles.com/packages/lf20_cgpoa2.json"
-              mode="bounce"
-              background="transparent"
-              speed="1"
-              style="width: 100%; height: auto"
-              loop
-              autoplay
-            ></lottie-player> -->
-            <!-- <lottie-player
-              src="https://assets10.lottiefiles.com/packages/lf20_id1rosky.json"
-              mode="bounce"
-              background="transparent"
-              speed="1"
-              style="width: 100%; height: auto"
-              loop
-              autoplay
-            ></lottie-player> -->
           </div>
           <div class="col-sm-12 col-md-6 counters align-self-center">
+            <h6 class="text-center display-5 my-sm-4 my-lg-5">
+              Our achievements so far...
+            </h6>
             <div class="row mb-md-3">
               <div class="col-md-6">
                 <div
@@ -596,7 +601,7 @@
       </div>
 
       <!-- Partners -->
-      <section id="partners" class="my-5 container">
+      <section id="partners" class="my-5 container-fluid bg-light py-4">
         <h4 class="text-center display-4 main-title text-danger mb-4">
           Strategic Partners
         </h4>
@@ -760,7 +765,7 @@
       </section>
     </main>
 
-    <p class="text-center display-5">
+    <p class="text-center display-5 my-2 fs-3">
       Work in progress...<br />
       Thanks for being patient with us 🙏
     </p>
@@ -877,7 +882,7 @@
     <script src="slick_custom.js"></script>
     <script>
       const counters = document.querySelectorAll("#counter_map .counter");
-      let speed = 200;
+      let speed = 50;
       counters.forEach((counter) => {
         const updateCount = () => {
           const target = +counter.getAttribute("data-target");
@@ -891,34 +896,25 @@
             count.innerText = target;
           }
         };
-        updateCount();
+        $(window).scroll(function () {
+          var hT = $(".counters").offset().top,
+            hH = $(".counters").outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+          console.log(hT - wH, wS);
+          if (wS > hT + hH - wH) {
+            updateCount();
+          }
+        });
       });
     </script>
     <script>
-      const services_accordion = document.getElementById("services_accordion");
-
-      const service_accordion_btns =
-        document.getElementsByClassName("accordion-button");
-
-      const service_accordion_animations = document.getElementsByClassName(
-        "service_animation_item"
-      );
-
-      for (let i = 0; i < service_accordion_btns.length; i++) {
-        service_accordion_btns[i].addEventListener(
-          "click",
-          update_accordion_animation
-        );
-      }
-
-      function update_accordion_animation(event) {
-        // Switch to respective accordion animation
-        for (let i = 0; i < service_accordion_animations.length; i++) {
-          service_accordion_animations[i].classList.toggle("show");
-        }
-        const accordion_id = event.target.getAttribute("aria-controls");
-        console.log(services_accordion.querySelector(`#${accordion_id}`));
-      }
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
     </script>
   </body>
 </html>
