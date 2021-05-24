@@ -59,107 +59,195 @@
                     required
                   />
                 </div>
+<!-- Designation -->
+<div class="mb-3">
+  <label for="designation" class="form-label"
+    >Designation</label
+  >
+  <input
+    type="text"
+    class="form-control"
+    id="designation"
+    name="designation"
+  />
+</div>
+<!-- Company Name -->
+<div class="mb-3">
+  <label for="company_name" class="form-label"
+    >Company Name</label
+  >
+  <input
+    type="text"
+    class="form-control"
+    id="company_name"
+    name="company_name"
+    required
+  />
+</div>
+<!-- Application of the parts -->
+<div class="mb-3">
+  <label for="app_of_parts" class="form-label"
+    >Application of part(s)</label
+  >
+  <input
+    type="text"
+    class="form-control"
+    id="app_of_parts"
+    name="app_of_parts"
+  />
+</div>
+<!-- Material of the parts -->
+<div class="mb-3">
+  <label for="mat_of_parts" class="form-label"
+    >Material of part(s)</label
+  >
+  <input
+    type="text"
+    class="form-control"
+    id="mat_of_parts"
+    name="mat_of_parts"
+  />
+</div>
+<!-- Quantity of the parts -->
+<div class="mb-3">
+  <label for="qty_of_parts" class="form-label"
+    >Material of part(s)</label
+  >
+  <input
+    type="number"
+    class="form-control"
+    id="qty_of_parts"
+    name="qty_of_parts"
+  />
+</div>
+<!-- Tech for manufacturing -->
+<div class="mb-3">
+  <label for="tech_for_manufacturing" class="form-label"
+    >Technology for manufacturing</label
+  >
+  <!-- <input
+    type="text"
+    class="form-control"
+    id="tech_for_manufacturing"
+    name="tech_for_manufacturing"
+  /> -->
 
-                <!-- Company Name -->
-                <div class="mb-3">
-                  <label for="company_name" class="form-label"
-                    >Company Name</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="company_name"
-                    name="company_name"
-                    required
-                  />
-                </div>
-                <!-- Designation -->
-                <div class="mb-3">
-                  <label for="designation" class="form-label"
-                    >Designation</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="designation"
-                    name="designation"
-                  />
-                </div>
-                <!-- Application of the parts -->
-                <div class="mb-3">
-                  <label for="app_of_parts" class="form-label"
-                    >Application of part(s)</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="app_of_parts"
-                    name="app_of_parts"
-                  />
-                </div>
-                <!-- Tech for manufacturing -->
-                <div class="mb-3">
-                  <label for="tech_for_manufacturing" class="form-label"
-                    >Technology for manufacturing</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="tech_for_manufacturing"
-                    name="tech_for_manufacturing"
-                  />
-                </div>
-                <!-- Colour -->
-                <div class="mb-3">
-                  <label for="colour" class="form-label"
-                    >Any Particular Colour?</label
-                  >
-                  <input
-                    type="color"
-                    class="form-control form-control-color"
-                    id="colour"
-                    name="colour"
-                  />
-                </div>
-                <!-- Post-processing  -->
-                <div class="mb-3">
-                  <label for="post_processing" class="form-label"
-                    >Any particular post-processing?
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="post_processing"
-                    name="post_processing"
-                  />
-                </div>
-                <!-- 3D Models -->
-                <div class="mb-3">
-                  <label for="3D_models" class="form-label" name="3D_models"
-                    >Upload 3D Models here</label
-                  >
-                  <input
-                    class="form-control"
-                    type="file"
-                    id="3D_models"
-                    multiple
-                    required
-                  />
-                </div>
-                <!-- PDFs & Word Files -->
-                <div class="mb-3">
-                  <label for="text_files" class="form-label" name="3D_models"
-                    >Upload associated Word/PDF files here</label
-                  >
-                  <input
-                    class="form-control"
-                    type="file"
-                    name="text_files"
-                    id="text_files"
-                    multiple
-                    required
-                  />
-                </div>
+  <select name="Tech. for manufacturing" class="form-select" aria-label="Tech for manufacturing" id="tech_for_manufacturing">
+    <option selected disabled>Choose a technology</option>
+    <option value="FDM">Fused Deposition Modeling/ Fused Filament Fabrication (FDM)</option>
+    <option value="SLA">Stereolithography (SLA)</option>
+    <option value="SLS">Selective Laser Sintering (SLS)</option>
+    <option value="MJF">Multi-Jet Fusion (MJF)</option>
+    <option value="DMLS">Direct Metal Laser Sintering (DMLS)</option>
+    <option value="Polyjet Printing">Polyjet Printing</option>
+    <option value="Urethane Casting">Urethane Casting/ Soft Molding</option>
+    <option value="Proto Molding">Proto Molding</option>
+    <option value="CNC Machining">CNC Machining</option>
+    <option value="Fabrication">Fabrication</option>
+    <option value="Laser Cutting">Laser Cutting</option>
+    <option value="Plasma Cutting">Plasma Cutting</option>
+    <option value="Water Jet Cutting">Water Jet Cutting</option>
+    <option value="Compression Molding">Compression Molding</option>
+    <option value="Injection Molding">Injection Molding</option>
+    <option value="Die Casting">Die Casting</option>
+    <option value="Thermoforming">Thermoforming</option>
+  </select>
+</div>
+
+<!-- Colour -->
+<div class="mb-3">
+  <label for="colour" class="form-label"
+    >Enter standard color of the part(s) or mention the RAL Code</label
+  >
+  <input
+    type="text"
+    class="form-control"
+    id="colour"
+    name="colour"
+    required
+    aria-describedby="colourHelp"
+  />
+  <div id="colourHelp" class="form-text">For Ex: RAL code for pure white is RAL#9010, jet black is RAL#9005, standard grey is RAL#7035</div>
+</div>
+<!-- Post-processing  -->
+<div class="mb-3">
+  <label for="post_processing" class="form-label"
+    >Post Processing Requirements
+  </label>
+  <!-- <input
+    type="text"
+    class="form-control"
+    id="post_processing"
+    name="post_processing"
+  /> -->
+  <select name="Post Processing" class="form-select" aria-label="post_processing" id="post_processing">
+    <option selected disabled>Choose a requirements</option>
+    <option value="Smoothening">Smoothening (for 3D Printing only)</option>
+    <option value="Sanding">Sanding</option>
+    <option value="Spray Painting">Spray Painting</option>
+    <option value="Lacquering">Lacquering</option>
+    <option value="Dip Dyeing">Dip Dyeing</option>
+    <option value="Electroplating">Electroplating</option>
+    <option value="Electroless Plating">Electroless Plating</option>
+    <option value="Sand Blasting">Sand Blasting</option>
+    <option value="Shot Blasting">Shot Blasting (Abrasive/Glass bead)</option>
+    <option value="Heat treatment">Heat treatment</option>
+    <option value="Polishing">Polishing</option>
+    <option value="CNC milling">CNC milling (for die-cast parts)</option>
+    <option value="CNC turning ">CNC turning (die-cast parts)</option>
+    <option value="Wet-vibro finishing">Wet-vibro finishing</option>
+    <option value="Blackening">Blackening</option>
+    <option value="Powder coating">Powder coating</option>
+    <option value="Phosphatizing">Phosphatizing</option>
+    <option value="Chromate conversion">Chromate conversion</option>
+    <option value="Anodizing">Anodizing (Type I/II/III)</option>
+    <option value="Primer Painting">Primer Painting</option>
+    <option value="Glossy/Semi-glossy/Matte/Textured finish">Glossy/Semi-glossy/Matte/Textured finish (Applicable to molding)</option>
+  </select>
+</div>
+
+ <!-- 3D Models -->
+ <div class="mb-3">
+  <label for="3D_models" class="form-label" name="3D_models"
+    >Upload 3D Models ONLY here </label
+  >
+  <input
+    class="form-control"
+    type="file"
+    id="3D_models"
+    multiple
+    required
+    accept=".stp,.step,.stl,.iges"
+  />
+</div>
+
+<!-- PDFs & Word Files -->
+<div class="mb-3">
+  <label for="text_files" class="form-label" name="3D_models"
+    >Upload associated Word/PDF files here</label
+  >
+  <input
+    class="form-control"
+    type="file"
+    name="text_files"
+    id="text_files"
+    multiple
+    required
+    accept=".pdf, .doc"
+  />
+</div>
+
+
+                
+
+
+                
+                
+                
+                
+                
+               
+                
                 <!-- Official Email -->
                 <div class="mb-3">
                   <label for="email" class="form-label">Email address</label>
@@ -189,6 +277,7 @@
                     Submit
                   </button>
                 </div>
+                <p class="mt-3"><strong> NOTE:</strong> In case of DFAM/ DFM consultations or to setup a discussion or to request an NDA process, please write to <a href="mailto:connect@printlytix.com">connect@printlytix.com</a></p>
               </form>
             </div>
           </div>
