@@ -24,6 +24,21 @@
   
   <head>
     <title>Printalytix | Rapid Prototyping</title>
+    <style>
+      #technologies .card .icon img {
+        width: 100px;
+        height: auto;
+        text-align: center;
+      }
+      #technologies .row {
+        /* width: 99.9%; */
+        margin: 0 auto;
+      }
+      #technologies .card {
+        background: #1e88e5;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -99,9 +114,169 @@
     <main>
 
       <!-- Technologies -->
-      <section id="rapid_technologies">
-        <div class="row">
-          <div class="col s12 l3"></div>
+      <section id="technologies" class="">
+        <h4 class="text-center display-4 main-title text-danger">
+          Technologies
+        </h4>
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-3 mb-3">
+            <div class="card ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/rapid/fdm.png"
+                    alt="FDM Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4>FDM/FFF</h4>
+                </div>
+                <p class="sub-title">Filament extrusion-based technology, best suited for basic fit-and-form testing prototypes</p>
+                <div class="desc">
+                  <p>Materials:</p>
+                  <ul>
+                    <li>
+                      PLA, TPU, ABS, PC, PETG
+                    </li>
+                    <li>
+                      Ultem, HIPS, PEEK, Nylon, ASA
+                    </li>
+                    <li>
+                      Composites with PLA base and others
+                    </li>
+                  </ul>
+                  <p>Max machine volumes up to 500*500*500 in mm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 mb-3">
+            <div class="card ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/rapid/sla.png"
+                    alt="SLA Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4>SLA </h4>
+                </div>
+                <p class="sub-title">Liquid resin-based technology, best suited for fit-form and aesthetics testing prototypes</p>
+                <div class="desc">
+                  <p>Materials:</p>
+                  <ul>
+                    <li>
+                      <span class="fst-italic">Standard Resins:</span> <br>
+                      Black, Grey, Clear, White & Others
+                    </li>
+                    <li>
+                      <span class="fst-italic">Engineering Resins:</span> <br>
+                      Durable Resin (PP-like), Heat Resistant Resin,Tough resin (ABS-like), Elastic, Rigid (Ceramic-filled), Dental resins and others, Flexible Resin (Rubber-like)
+                    </li>
+                    <li>
+                      <span class="fst-italic">Standard Resins:</span> <br>
+                      Black, Grey, Clear, White & Others
+                    </li>
+                  </ul>
+                  <p>Max machine volumes up to 600*600*450 in mm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 mb-3">
+            <div class="card ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/rapid/sls.png"
+                    alt="SLS Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4>SLS/MJF </h4>
+                </div>
+                <p class="sub-title">Powder material-based technologies, best suited for fit-form, fully functional testing prototypes</p>
+                <div class="desc">
+                  <p>Materials:</p>
+                  <ul>
+                    <li>
+                      <span class="fst-italic">MJF: </span>PA11, PA12 and others
+                    </li>
+                    <li>
+                      <span class="fst-italic">SLS: </span>PA11, PA12, TPU, PEEK, Polypropylene and others
+                    </li>
+                  </ul>
+                  <p>Maximum machine volumes</p>
+                  <ul>
+                    <li>
+                      <span class="fst-italic">SLS: </span>340*340*620 in mm
+                    </li>
+                    <li>
+                      <span class="fst-italic">MJF: </span>332*190*248 in mm
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 mb-3">
+            <div class="card ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/rapid/dmls.png"
+                    alt="DMLS Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4>DMLS/SLM </h4>
+                </div>
+                <p class="sub-title">Powder metal-based technology, capable of printing complex parts and very much comparable to 5-axis machined parts involving tough geometries and special materials</p>
+                <div class="desc">
+                  <p>Materials:</p>
+                  <ul>
+                    <li>
+                      Aluminium alloy, Maraging steel, Copper & others, 
+                    </li>
+                    <li>
+                      Cobalt Chrome, Stainless Steel, Inconel, Titanium 
+                    </li>
+                  </ul>
+                  <p>	Max machine volumes up to 250*250*300 in mm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 mb-3">
+            <div class="card ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/rapid/polyjet.png"
+                    alt="Polyjet Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4>DMLS/SLM</h4>
+                </div>
+                <p class="sub-title">A short name for Photopolymer Jetting process, PolyJet technology involves jetting of materials of same/ multiple compositions together or in multiple colors which are cured and hardened with UV light</p>
+                <p class="sub-title">This can print complex wide-range of materials together and hence is used in achieving complex shapes, intricate details and delicate features</p>
+                <div class="desc">
+                  <p>Materials:</p>
+                  <ul>
+                    <li>
+                      	VeroUltra, 	Rigur, 	Tango and others, 	VeroClear, 	Simulated Polypropylene, 	VeroFlex
+                    </li>
+                    <li>
+                      Cobalt Chrome, Stainless Steel, Inconel, Titanium 
+                    </li>
+                  </ul>
+                  <p>		Max machine volumes up to 294*192*148.6 in mm</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -109,10 +284,7 @@
 
 
 
-      <p class="text-center display-5">
-        Work in progress...<br />
-        Thanks for being patient with us 🙏
-      </p>
+
     </main>
 
     <footer class="bg-light">
