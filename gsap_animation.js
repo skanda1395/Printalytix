@@ -1,3 +1,10 @@
+// <!-- GSAP -->
+// <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+// <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/TextPlugin.min.js"></script>
+// <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/EasePack.min.js"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+// <script src="gsap_animation.js"></script> -->
+
 gsap.registerPlugin(TextPlugin, EasePack);
 
 var container = $("#demo"),
