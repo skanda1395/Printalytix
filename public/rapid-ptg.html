@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Printalytix | Rapid Prototyping</title>
     <style>
-      #technologies .card .icon img {
+      #technologies .card shadow bg-dark text-white .icon img {
         width: 100px;
         height: auto;
         text-align: center;
@@ -37,13 +37,18 @@
         /* width: 99.9%; */
         margin: 0 auto;
       }
-      #technologies .card {
-        background: #1e88e5;
-        color: white;
-      }
       .rapid_ptg_videos video {
         max-width: 100%;
         height: auto;
+      }
+      #rapid_ptg_slider img {
+        max-height: 700px;
+      }
+      #technologies video {
+        max-height: 500px;
+      }
+      #technologies .card .title {
+        color: var(--logo-colour);
       }
     </style>
   </head>
@@ -120,53 +125,54 @@
 
     <main>
 
-      <!-- Videos -->
-      <div class="rapid_ptg_videos container">
-        <video autoplay loop>
-          <source
-            src="assets/rapid/rapid_ptg_video.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <video autoplay loop>
-          <source
-            src="assets/rapid/sla3d.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <video autoplay loop>
-          <source
-            src="assets/rapid/sls_mjf.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <video autoplay loop>
-          <source
-            src="assets/rapid/dmls.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <video autoplay loop>
-          <source
-            src="assets/rapid/polyjet.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+      <!-- Image Slider -->
+      <div id="rapid_ptg_slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/rapid/slider_1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/rapid/slider_2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/rapid/slider_3.jpeg" class="d-block w-100" alt="...">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
       <!-- Technologies -->
-      <section id="technologies" class="">
-        <h4 class="text-center display-4 main-title text-danger">
+      <section id="technologies" class="my-5 container">
+        <h4 class="text-center display-4 main-title text-danger my-4">
           Technologies
         </h4>
-        <div class="row mt-3">
-          <div class="col-sm-12 col-md-3 mb-3">
-            <div class="card ">
+        <div class="row align-items-center my-5">
+          <div class="col-sm-12 col-md-6 order-md-1">
+            <div class="video_div mx-auto">
+              <video width="100%" height="auto" autoplay loop>
+                <source
+                  src="assets/rapid/rapid_ptg_video.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="card shadow bg-dark text-white ">
               <div class="card-body">
                 <div class="icon text-center">
                   <img
@@ -196,8 +202,21 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3 mb-3">
-            <div class="card ">
+        </div>
+        <div class="row align-items-center my-5">
+          <div class="col-sm-12 col-md-6">
+            <div class="video_div mx-auto">
+              <video width="100%" height="auto" autoplay loop>
+                <source
+                  src="assets/rapid/sla3d.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="card shadow bg-dark text-white ">
               <div class="card-body">
                 <div class="icon text-center">
                   <img
@@ -230,8 +249,21 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3 mb-3">
-            <div class="card ">
+        </div>
+        <div class="row align-items-center my-5">
+          <div class="col-sm-12 col-md-6 order-md-1">
+            <div class="video_div mx-auto">
+              <video width="100%" height="auto" autoplay loop>
+                <source
+                  src="assets/rapid/sls_mjf.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="card shadow bg-dark text-white ">
               <div class="card-body">
                 <div class="icon text-center">
                   <img
@@ -266,8 +298,22 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3 mb-3">
-            <div class="card ">
+          
+        </div>
+        <div class="row align-items-center my-5">
+          <div class="col-sm-12 col-md-6">
+            <div class="video_div mx-auto">
+              <video width="100%" height="auto" autoplay loop>
+                <source
+                  src="assets/rapid/dmls.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="card shadow bg-dark text-white ">
               <div class="card-body">
                 <div class="icon text-center">
                   <img
@@ -294,8 +340,21 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3 mb-3">
-            <div class="card ">
+        </div>
+        <div class="row align-items-center my-5">
+          <div class="col-sm-12 col-md-6 order-md-1">
+            <div class="video_div mx-auto">
+              <video width="100%" height="auto" autoplay loop>
+                <source
+                  src="assets/rapid/polyjet.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="card shadow bg-dark text-white ">
               <div class="card-body">
                 <div class="icon text-center">
                   <img
@@ -304,7 +363,7 @@
                   />
                 </div>
                 <div class="title text-center my-3">
-                  <h4>DMLS/SLM</h4>
+                  <h4>PolyJet</h4>
                 </div>
                 <p class="sub-title">A short name for Photopolymer Jetting process, PolyJet technology involves jetting of materials of same/ multiple compositions together or in multiple colors which are cured and hardened with UV light</p>
                 <p class="sub-title">This can print complex wide-range of materials together and hence is used in achieving complex shapes, intricate details and delicate features</p>
@@ -312,7 +371,7 @@
                   <p>Materials:</p>
                   <ul>
                     <li>
-                      	VeroUltra, 	Rigur, 	Tango and others, 	VeroClear, 	Simulated Polypropylene, 	VeroFlex
+                        VeroUltra, 	Rigur, 	Tango and others, 	VeroClear, 	Simulated Polypropylene, 	VeroFlex
                     </li>
                     <li>
                       Cobalt Chrome, Stainless Steel, Inconel, Titanium 
@@ -325,12 +384,7 @@
           </div>
         </div>
       </section>
-
-
-
-
-
-
+      
     </main>
 
     <footer class="bg-light">
