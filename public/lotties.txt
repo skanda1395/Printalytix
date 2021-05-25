@@ -1,0 +1,27 @@
+// Rapid Prototyping
+<lottie-player
+    src="https://assets6.lottiefiles.com/packages/lf20_4906fv6z.json"
+    background="transparent"
+    speed="1"
+    loop
+    autoplay
+></lottie-player>
+
+// Custom Manufacturing
+<lottie-player
+    src="https://assets1.lottiefiles.com/packages/lf20_q56zavhf.json"
+    background="transparent"
+    speed="1"
+    loop
+    autoplay
+></lottie-player>
+
+// Contract Manufacturing
+<lottie-player
+    src="https://assets5.lottiefiles.com/packages/lf20_Mjmr5Q.json"
+    background="transparent"
+    speed="1"
+    loop
+    autoplay
+    class="long_lottie"
+></lottie-player>

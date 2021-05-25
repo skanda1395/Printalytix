@@ -121,6 +121,9 @@
       #why_us .card .desc li {
         margin-bottom: 0.5em;
       }
+      #services .video_div {
+        width: 90%;
+      }
 
       @media only screen and (max-width: 600px) {
         #partners .partner-logo {
@@ -129,13 +132,16 @@
         .navbar {
           background: #f8f9fa;
         }
+        #services .video_div {
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="assets/logo.png" alt="Printalytix Logo" class="logo" />
@@ -328,7 +334,7 @@
       <!-- Why Us -->
       <section id="why_us" class="my-5 container">
         <h4 class="text-center display-4 main-title text-danger">
-          Why choose Printalytix? 🤔
+          Why choose Printalytix?
         </h4>
         <div class="row mt-5">
           <div class="col-sm-12 col-md-4 mb-3">
@@ -421,15 +427,18 @@
         <h4 class="text-center display-4 main-title text-danger">
           Our Services
         </h4>
-        <div class="row">
+        <!-- Rapid Prg -->
+        <div class="row my-5">
           <div class="col-sm-12 col-md-6 order-md-1 align-self-center">
-            <lottie-player
-              src="https://assets6.lottiefiles.com/packages/lf20_4906fv6z.json"
-              background="transparent"
-              speed="1"
-              loop
-              autoplay
-            ></lottie-player>
+            <div class="video_div mx-auto">
+              <video width="100%" height="auto" autoplay loop>
+                <source
+                  src="assets/rapid/rapid_ptg_video.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
           <div
             class="
@@ -455,16 +464,18 @@
             </div>
           </div>
         </div>
-
-        <div class="row">
+        <!-- Custom Mfg -->
+        <div class="row my-5">
           <div class="col-sm-12 col-md-6 align-self-center">
-            <lottie-player
-              src="https://assets1.lottiefiles.com/packages/lf20_q56zavhf.json"
-              background="transparent"
-              speed="1"
-              loop
-              autoplay
-            ></lottie-player>
+            <div class="video_div mx-auto">
+              <video width="100%" height="auto" autoplay loop>
+                <source
+                  src="assets/custom/custom_mfg_video.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
           <div
             class="
@@ -492,17 +503,18 @@
             </div>
           </div>
         </div>
-
-        <div class="row">
+        <!-- Contract Mfg -->
+        <div class="row my-55">
           <div class="col-sm-12 col-md-6 order-md-1 align-self-center">
-            <lottie-player
-              src="https://assets5.lottiefiles.com/packages/lf20_Mjmr5Q.json"
-              background="transparent"
-              speed="1"
-              loop
-              autoplay
-              class="long_lottie"
-            ></lottie-player>
+            <div class="video_div mx-auto">
+              <video width="100%" height="auto" autoplay loop>
+                <source
+                  src="assets/custom/custom_mfg_video.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
           <div
             class="
@@ -912,14 +924,6 @@
           if (wS > hT + hH - wH) {
             updateCount();
           }
-        });
-      });
-    </script>
-    <script>
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $(".navbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
         });
       });
     </script>

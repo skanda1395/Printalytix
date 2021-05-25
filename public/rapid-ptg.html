@@ -23,6 +23,9 @@
 </html>
   
   <head>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Printalytix | Rapid Prototyping</title>
     <style>
       #technologies .card .icon img {
@@ -37,6 +40,10 @@
       #technologies .card {
         background: #1e88e5;
         color: white;
+      }
+      .rapid_ptg_videos video {
+        max-width: 100%;
+        height: auto;
       }
     </style>
   </head>
@@ -112,6 +119,45 @@
 
 
     <main>
+
+      <!-- Videos -->
+      <div class="rapid_ptg_videos container">
+        <video autoplay loop>
+          <source
+            src="assets/rapid/rapid_ptg_video.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <video autoplay loop>
+          <source
+            src="assets/rapid/sla3d.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <video autoplay loop>
+          <source
+            src="assets/rapid/sls_mjf.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <video autoplay loop>
+          <source
+            src="assets/rapid/dmls.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <video autoplay loop>
+          <source
+            src="assets/rapid/polyjet.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
       <!-- Technologies -->
       <section id="technologies" class="">
@@ -380,5 +426,13 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <!-- Slick JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="slick_rapid.js"></script>
   </body>
 </html>
