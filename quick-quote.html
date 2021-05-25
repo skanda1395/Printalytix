@@ -111,13 +111,14 @@
 <!-- Quantity of the parts -->
 <div class="mb-3">
   <label for="qty_of_parts" class="form-label"
-    >Material of part(s)</label
+    >Quantity of part(s)</label
   >
   <input
     type="number"
     class="form-control"
     id="qty_of_parts"
     name="qty_of_parts"
+    min="1"
   />
 </div>
 <!-- Tech for manufacturing -->
@@ -219,6 +220,7 @@
     required
     accept=".stp,.step,.stl,.iges"
   />
+  <div id="3d_file_upload_helper_text" class="form-text">Upload files with these extensions: <strong>.stp, .step, .stl, .iges</strong></div>
 </div>
 
 <!-- PDFs & Word Files -->
@@ -235,6 +237,7 @@
     required
     accept=".pdf, .doc"
   />
+  <div id="doc_upload_helper_text" class="form-text">Upload files with these extensions: <strong>.pdf, .doc</strong></div>
 </div>
 
 
