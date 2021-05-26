@@ -50,6 +50,19 @@
       #technologies .card .title {
         color: var(--logo-colour);
       }
+
+      #custom_ptg_gallery img {
+        width: 100%;
+        max-height: 500px;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      @media only screen and (max-width: 600px) {
+       #custom_ptg_gallery {
+         display: none;
+       }
+      }
     </style>
   </head>
   <body>
@@ -126,7 +139,7 @@
     <main>
 
       <!-- Image Slider -->
-      <div id="rapid_ptg_slider" class="carousel slide" data-bs-ride="carousel">
+      <div id="rapid_ptg_slider" class="carousel slide d-md-none" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -153,6 +166,30 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <!-- Image Gallery -->
+      <section id="custom_ptg_gallery" class="container">
+        <h4 class="text-center display-4 main-title text-danger my-4">
+          Our Manufactured Products 
+        </h4>
+          <div class="row"  data-masonry='{"percentPosition": true }'>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/custom/Fabricated cryotank.jpeg" alt="">
+            </div>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/custom/slider_2.jpg" alt="">
+            </div>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/custom/Bionic arm_metal 3D printed.jpeg" alt="">
+            </div>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/custom/slider_1.jpg" alt="">
+            </div>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/custom/slider.jpg" alt="">
+            </div>
+          </div>
+      </section>
 
       <!-- Technologies -->
       <section id="technologies" class="my-5 container">
@@ -663,5 +700,6 @@
     ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="slick_rapid.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>
