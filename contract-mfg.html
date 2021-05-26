@@ -2,15 +2,406 @@
 
 <head>
     <title>Printalytix | Contract Manufacturing</title>
+    <style>
+      #custom_ptg_gallery img {
+        width: 100%;
+        max-height: 500px;
+        height: auto;
+        border-radius: 5px;
+      }
+      #why_us_cust_mfg .icon img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+      }
+      #custom_mfg_icons .icon img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+      }
+      .title {
+        color: var(--logo-colour);
+      }
+      @media only screen and (max-width: 600px) {
+       #custom_ptg_gallery {
+         display: none;
+       }
+      }
+    </style>
   </head>
   <body>
     <sergey-import src="header" />
 
     <main>
-      <p class="text-center display-5">
-        Work in progress...<br />
-        Thanks for being patient with us 🙏
-      </p>
+      <!-- Image Slider -->
+      <div id="rapid_ptg_slider" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/contract/Fabricated parts_AI systems.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/contract/Automotive Jigs-1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/contract/IMG-20200916-WA0001.jpg" class="d-block w-100" alt="...">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#rapid_ptg_slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Image Gallery -->
+      <section id="custom_ptg_gallery" class="container">
+        <h4 class="text-center display-4 main-title text-primary my-4">
+          Contract Manufacturing 
+        </h4>
+          <div class="row"  data-masonry='{"percentPosition": true }'>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/contract/Automotive Jigs-1.jpeg" alt="">
+            </div>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/contract/Injection molded enclosures.jpeg" alt="">
+            </div>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/contract/IMG-20200916-WA0001.jpg" alt="">
+            </div>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/contract/IMG-20200916-WA0006.jpg" alt="">
+            </div>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/contract/Fabricated parts_AI systems.jpeg" alt="">
+            </div>
+            <div class="col col-md-4 gx-md-2 mb-md-2">
+              <img src="assets/contract/IMG-20200916-WA0005.jpg" alt="">
+            </div>
+          </div>
+      </section>
+
+      <section id="custom_mfg_icons" class="container">
+        <h4 class="text-center display-4 main-title text-danger my-4">
+          Technologies We Offer
+        </h4>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 mb-3">
+            <div class="card shadow bg-dark text-white ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/custom/plastic_injection.jpg"
+                    alt="Plastic Injection Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4 class="title">Plastic Injection</h4>
+                </div>
+                <div class="desc">
+                  <ul>
+                    <li>A network of 12 machines. </li>
+                    <li>Tonnage ranging from 50 – 660T handling.</li>
+                    <li> Component molding capacity is 0.5 to 1200g</li>
+                  </ul>
+                  <p>Specialty processes like:</p>
+                  <ul>
+                    <li>Insert molding, Over molding, Plastic welding, multi-cavity molding, family molding & Molding with engineering plastics</li>
+                  </ul>
+                  <div class="text-end">
+                    <a href="rapid-ptg.html" class="btn btn-primary"
+                      >Know More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-3">
+            <div class="card shadow bg-dark text-white ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/custom/cnc_machining.png"
+                    alt="CNC Machining Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4 class="title">CNC Machining</h4>
+                </div>
+                <div class="desc">
+                  <ul>
+                    <li>A network of 17 machines</li>
+                    <li> CNC milling max. machine volumes of 820*510*510mm</li>
+                    <li>CNC turning max diameter of 500mm and max. length of 1000mm</li>
+                  </ul>
+                  <div class="text-end">
+                    <a href="rapid-ptg.html" class="btn btn-primary"
+                      >Know More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-3">
+            <div class="card shadow bg-dark text-white ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/custom/plastic_fabr.png"
+                    alt="Plastic Injection Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4 class="title">Plastic Fabrication</h4>
+                </div>
+                <div class="desc">
+                  <ul>
+                    <li>A network of 16 manufacturing partners.</li>
+                    <li>Highly capable of making products through Laser/Plasma/WaterJet cutting, MIG/MAG/TIG welding, Spot welding  CNC bending, Shearing, Cutting, etc.</li>
+                  </ul>
+                  <div class="text-end">
+                    <a href="rapid-ptg.html" class="btn btn-primary"
+                      >Know More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-3">
+            <div class="card shadow bg-dark text-white ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/contract/die_casting.jpg"
+                    alt="Die Casting Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4 class="title">Die Casting</h4>
+                </div>
+                <div class="desc">
+                 <ul>
+                   <li>A network of 5 cloud manufacturing partners.</li>
+                   <li>Capabilities in both Gravity Die casting and Pressure Die casting.</li>
+                   <li>Machine tonnage ranging from 120 to 800 tons</li>
+                   <li>Component weight ranging from 6g to 2000g</li>
+
+                 </ul>
+                  <div class="text-end">
+                    <a href="rapid-ptg.html" class="btn btn-primary"
+                      >Know More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-3">
+            <div class="card shadow bg-dark text-white ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/custom/u_casting.png"
+                    alt="Urethane Casting Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4 class="title">Urethane Casting</h4>
+                </div>
+                <div class="desc">
+                 <ul>
+                   <li>A network of 4 machines of upto 1000mm<sup>3</sup>   capacity</li>
+                   <li>Capabilities of producing components ranging from as small as 20 mm to as big as 300mm in length</li>
+                 </ul>
+                  <div class="text-end">
+                    <a href="rapid-ptg.html" class="btn btn-primary"
+                      >Know More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-3">
+            <div class="card shadow bg-dark text-white ">
+              <div class="card-body">
+                <div class="icon text-center">
+                  <img
+                    src="assets/custom/compression_molding.png"
+                    alt="Compression Molding Icon"
+                  />
+                </div>
+                <div class="title text-center my-3">
+                  <h4 class="title">Compression Molding</h4>
+                </div>
+                <div class="desc">
+                 <ul>
+                   <li>A network of 10 machines</li>
+                   <li>Capabilities of producing components ranging from as small as 2mm thick O-ring/ seals to 50mm thick gaskets and other flexible materials</li>
+                 </ul>
+                  <div class="text-end">
+                    <a href="rapid-ptg.html" class="btn btn-primary"
+                      >Know More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contract_tech_brief" class="container my-5">
+        <!-- CNC Machining -->
+        <div id="cnc_machining" class="py-5">
+          <div class="row bg-light">
+            <div class="col-sm-12 col-md-4 align-self-center">
+              <div class="icon text-center">
+                <img
+                  src="assets/custom/cnc_machining.png"
+                  alt="CNC Machining Icon"
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="title text-center my-3">
+                <h4 class="title">CNC Machining</h4>
+              </div>
+              <div class="desc">
+                <ul>
+                  <li>Capability of providing 15000+ machining hours per month</li>
+                  <li>State-of-the-art machine tools and turrets, continuous production centers</li>
+                  <li>Material handling capabilities:
+                    <ul>
+                      <li> <span class="fst-italic">Metals</span>- Aluminium, Stainless Steel, Alloy Steel, Mild Steel, Tool Steel and Brass</li>
+                      <li> <span class="fst-italic">Plastics</span>- ABS, Polycarbonate, Nylon, POM(Delrin), PEEK, PMMA(Acrylic), Polypropylene, Polyethylene</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Plastic Injection Molding -->
+        <div id="plastic_injection_molding" class="py-5">
+          <div class="row bg-light">
+            <div class="col-sm-12 col-md-4 align-self-center">
+              <div class="icon text-center">
+                <img
+                  src="assets/custom/plastic_injection.jpg"
+                  alt="Plastic Injection Molding Icon"
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="title text-center my-3">
+                <h4 class="title">Plastic Injection Molding</h4>
+              </div>
+              <div class="desc">
+                <ul>
+                  <li>It is one of the best sought-after technologies for continuous production of plastic and over-molded components</li>
+                  <li>It can produce thousands to millions of parts from a single tool that helps amortize the cost of products</li>
+                  <li>There a variety of product finish options: As machined, Shiny, Semi-gloss, Matte, Textured finish and so on...</li>
+                  <li>Our value-added services also include Mold design, Mold maintenance, Mold flow analysis, Material Recommendations, DFM analysis & reporting, Coloring options and color matching</li>
+                  <li>Materials:
+                    <ul>
+                      <li> <span class="fst-italic">Plastics</span>- ABS, Polycarbonate, Nylon,	POM(Delrin), Polypropylene,	HDPE, LDPE, Polyurethane, PC-ABS,	PVC, Polystyrene</li>
+                      <li> <span class="fst-italic">Additives</span>- Flame retardants,	Plasticizers, Colorants, Glass fibers, etc. 
+                        </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Die Casting -->
+        <div id="plastic_injection_molding" class="py-5">
+          <div class="row bg-light">
+            <div class="col-sm-12 col-md-4 align-self-center">
+              <div class="icon text-center">
+                <img
+                  src="assets/contract/die_casting.jpg"
+                  alt="Die Casting Icon"
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="title text-center my-3">
+                <h4 class="title">Die Casting </h4>
+              </div>
+              <div class="desc">
+                <ul>
+                  <li>It is the go-to choice similar to Plastic Injection Molding, for all metal and alloy components that need continuous production</li>
+                  <li>For different finish options, the products need to be selectively post-processed using CNC machining, Polishing, Shot blasting or Vibro polishing</li>
+                  <li>Our value-added services also include Mold design, Mold maintenance, Mold flow analysis, Material Recommendations, DFM analysis & reporting, Precision machining & finishing of molded components</li>
+                  <li>Our value-added services also include Mold design, Mold maintenance, Mold flow analysis, Material Recommendations, DFM analysis & reporting, Coloring options and color matching</li>
+                  <li>Materials:
+                    <ul>
+                      <li>Aluminum,	Zinc,	Magnesium,	Brass,	Bronze, Copper</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Printalytix for Contract Manufacturing? -->
+      <section id="why_us_cust_mfg" class="my-5 container">
+        <h5 class="text-center display-4 main-title text-primary my-4">
+          Why choose Printalytix for Contract Manufacturing?
+        </h5>
+        <div class="row">
+          <div class="col-sm-12 col-md text-center">
+            <div class="icon my-2">
+              <img src="assets/contract/adv_1.jpg" alt="">
+            </div>
+            <div class="desc">
+              <p>We provide a Comprehensive Production Engagement Program (CPEP) tailored to your organization’s requirements and priorities</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md text-center">
+            <div class="icon my-2">
+              <img src="assets/contract/adv_2.png" alt="">
+            </div>
+            <div class="desc">
+              <p>	
+                Complete ownership of quality with us and Go-to-Market focus with you
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md text-center">
+            <div class="icon my-2">
+              <img src="assets/adv_logo_4.png" alt="">
+            </div>
+            <div class="desc">
+              <p>Excellent Application engineering & DFAM support</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md text-center">
+            <div class="icon my-2">
+              <img src="assets/adv_logo_5.png" alt="">
+            </div>
+            <div class="desc">
+              <p>Efficient tracking and delivery mechanism</p>
+            </div>
+          </div>
+        </div>        
+      </section>
+
     </main>
 
     <sergey-import src="footer" />
@@ -21,5 +412,6 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>
